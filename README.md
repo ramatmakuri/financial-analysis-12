@@ -1,4 +1,4 @@
-# financial analysis - Machine Learning - Classification
+## financial analysis - Machine Learning - Classification
 
 Logistic Regression - Credit Risk Problem - Imbalanced Sample
 
@@ -29,7 +29,7 @@ Installation Guide: The application requires the below programs to be installed
 6. Pathlib 
 
 
-**Credit Risk Analysis Report
+#Credit Risk Analysis Report
 
 The purpose of this analysis is to determine if logistic regression for loan classification performs better imbalanced data or with balanced data, alebit generated automatically using resampler tool provided by imblearn.
 
@@ -38,7 +38,7 @@ For the purpiose of this analysis, I will leverage a set of past loan data obtai
 1. Performed LogisticRegression with the data as contained in the csv file (original data) and calculated the effectiveness of the predicted classification as measured by precision, accuracy and recall ratios.
 2. Resampled the data inorder to balance the data in terms of the population of bad and good loans (50% each), and repeated the prediction of bad and good laons using LogisticRegression on the resampled data. The revised result, as measured by precision, accuracy and recall ratios is compared with the original results.
 
-## Results
+# Results
 
 The results of the analysis are provided below:
 * **Machine Learning Model 1 based on original data:**
@@ -56,9 +56,10 @@ The results of the analysis are provided below:
     * Precision Score -  Overall - 1 (Breakup - For good loans is 99% but for bad loans is 99%)
     * Recal1 Score -  Overall - .99 (Breakup - For good loans is 100% but for bad loans is 86%)
 
-## Summary
+# Summary
 
 In the case of credit classification, precision ratio which  measures true positive as a measure of total positive (in other words, the number of good loans predicted as a percetnage of total good loans preicted - i.e. fasle positive are minimized) is the best indicator, as one nnegative loan can erode the entire porfitability of interest earned on good loans. 
+
 
 The precision ratio for bad loans improved considerably with the resampled data and hence the model with the revised sample data is preferred to run LogistcRegression in this case.
 
